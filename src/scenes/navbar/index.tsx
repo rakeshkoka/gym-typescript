@@ -71,7 +71,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                                 >
                                     <p>sign in</p>
                                     <ActionButton
-                                        setSelectedpage={setSelectedPage}
+                                        setSelectedPage={setSelectedPage}
                                     >
                                         Become a Member
                                     </ActionButton>

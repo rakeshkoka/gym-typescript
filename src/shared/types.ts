@@ -1,12 +1,20 @@
-export enum SelectedPage {
-    Home = "home",
-    Benefits = "benefits",
-    OurClasses = "ourclasses",
-    ContactUs = "contactus"
-}
+// export enum SelectedPage {
+//     Home = "home",
+//     Benefits = "benefits",
+//     OurClasses = "ourclasses",
+//     ContactUs = "contactus"
+// }
+export const SelectedPage = {
+    Home: "home",
+    Benefits: "benefits",
+    OurClasses: "ourclasses",
+    ContactUs: "contactus"
+} as const;
+
+export type SelectedPage = typeof SelectedPage[keyof typeof SelectedPage];
 
 export interface BenefitType {
-    icon: JSX.Element;
+    icon: React.ReactNode;
     title: string;
     description: string;
 }
